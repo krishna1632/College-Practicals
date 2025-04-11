@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery AJAX Demo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-database"></i> jQuery AJAX Demo</h1>
+      <p class="subtitle">Fetch and display data from JSONPlaceholder API</p>
+
+      <div class="controls">
+        <button id="fetchPostsBtn">
+          <i class="fas fa-newspaper"></i> Fetch Posts
+        </button>
+        <button id="fetchUsersBtn">
+          <i class="fas fa-users"></i> Fetch Users
+        </button>
+        <button id="clearBtn"><i class="fas fa-trash"></i> Clear Data</button>
+      </div>
+
+      <div class="status" id="statusMessage"></div>
+
+      <div class="data-container" id="dataContainer">
+        <p style="text-align: center; color: #6c757d">
+          No data fetched yet. Click a button above to load data.
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>
+          AJAX demonstration | Made with
+          <i class="fas fa-heart" style="color: var(--danger)"></i> and jQuery
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

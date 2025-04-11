@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Image Slider</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-images"></i> jQuery Image Slider</h1>
+
+      <div class="slider-container">
+        <div class="slider">
+          <div class="slide active">
+            <img src="assets/image1.jpeg" alt="Nature" />
+            <div class="slide-content">
+              <h3>Beautiful Nature</h3>
+              <p>
+                मेघालय, जिसे "बादलों का घर" कहा जाता है, अपनी हरी-भरी पहाड़ियों,
+                घने जंगलों और झरनों के लिए प्रसिद्ध है। चेरापूंजी और मावसिनराम
+                दुनिया की सबसे ज्यादा वर्षा वाले स्थानों में शामिल हैं। यहां की
+                प्राकृतिक सुंदरता हर प्रकृति प्रेमी को मंत्रमुग्ध कर देती है।
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/image2.avif" alt="City" />
+            <div class="slide-content">
+              <h3>Assam tea garden</h3>
+              <p>
+                असम की हरी-भरी चाय बागानों में ताजगी और सुगंध का अनूठा संगम है।
+                यहां की खूबसूरत वादियां और घने चाय बागान न सिर्फ स्वादिष्ट चाय
+                के लिए प्रसिद्ध हैं, बल्कि अपनी सुरम्य सुंदरता से भी मन मोह लेते
+                हैं।
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/image3.jpeg" alt="Technology" />
+            <div class="slide-content">
+              <h3>Arunachal Pradesh</h3>
+              <p>
+                अरुणाचल प्रदेश अपनी मंत्रमुग्ध कर देने वाली प्राकृतिक सुंदरता और
+                समृद्ध सांस्कृतिक विरासत के लिए प्रसिद्ध है। ऊँचे-ऊँचे पहाड़,
+                घने जंगल और नदियाँ इसे भारत के सबसे खूबसूरत राज्यों में से एक
+                बनाते हैं।
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/image4.jpeg" alt="Food" />
+            <div class="slide-content">
+              <h3>Sikkim</h3>
+              <p>
+                सिक्किम अपने मनोरम दृश्यों, जीवंत संस्कृति और लाजवाब व्यंजनों के
+                लिए प्रसिद्ध है। यहां के पारंपरिक मोमोज और थुकपा का स्वाद आपको
+                एक अनोखे स्वाद सफर पर ले जाएगा।
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="nav-dots">
+          <div class="dot active" data-slide="0"></div>
+          <div class="dot" data-slide="1"></div>
+          <div class="dot" data-slide="2"></div>
+          <div class="dot" data-slide="3"></div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="prevBtn">
+          <i class="fas fa-chevron-left"></i> Previous
+        </button>
+        <button id="nextBtn">Next <i class="fas fa-chevron-right"></i></button>
+      </div>
+
+      <div class="auto-play-toggle">
+        <span>Auto-play:</span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="autoPlayToggle" checked />
+          <span class="slider-toggle"></span>
+        </label>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

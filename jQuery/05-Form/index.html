@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Form Validation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-user-edit"></i> Form Validation</h1>
+
+      <form id="validationForm">
+        <div class="form-group" id="nameGroup">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Enter your full name" />
+          <div class="error-message" id="nameError">
+            Please enter a valid name (letters and spaces only)
+          </div>
+        </div>
+
+        <div class="form-group" id="emailGroup">
+          <label for="email">Email Address</label>
+          <input type="text" id="email" placeholder="Enter your email" />
+          <div class="error-message" id="emailError">
+            Please enter a valid email address
+          </div>
+        </div>
+
+        <div class="form-group" id="phoneGroup">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" placeholder="Enter your phone number" />
+          <div class="error-message" id="phoneError">
+            Please enter a valid 10-digit phone number
+          </div>
+        </div>
+
+        <button type="submit" id="submitBtn">
+          <i class="fas fa-paper-plane"></i> Submit Form
+        </button>
+
+        <div class="status" id="statusMessage"></div>
+      </form>
+
+      <div class="footer">
+        <p>
+          Form validation demonstration | Made with
+          <i class="fas fa-heart" style="color: var(--danger)"></i>
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

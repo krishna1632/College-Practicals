@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Effects Playground</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-magic"></i> jQuery Effects Playground</h1>
+      <p class="subtitle">Explore beautiful animations with jQuery</p>
+
+      <div class="effect-box" id="box">
+        <i class="fas fa-star"></i> Hello Beautiful World!
+      </div>
+
+      <div class="controls">
+        <button id="showBtn"><i class="fas fa-eye"></i> Show</button>
+        <button id="hideBtn"><i class="fas fa-eye-slash"></i> Hide</button>
+        <button id="toggleBtn"><i class="fas fa-sync-alt"></i> Toggle</button>
+      </div>
+
+      <div class="options">
+        <div class="speed-control">
+          <label for="speed"
+            ><i class="fas fa-tachometer-alt"></i> Speed:</label
+          >
+          <select id="speed">
+            <option value="slow">Slow</option>
+            <option value="500" selected>Medium</option>
+            <option value="fast">Fast</option>
+            <option value="2000">Very Slow</option>
+          </select>
+        </div>
+
+        <div class="speed-control">
+          <label for="effect"><i class="fas fa-sliders-h"></i> Effect:</label>
+          <select id="effect">
+            <option value="slide">Slide</option>
+            <option value="fade">Fade</option>
+            <option value="toggle">Toggle Class</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          Click buttons to see different animation effects | Made with
+          <i class="fas fa-heart" style="color: var(--danger)"></i> and jQuery
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

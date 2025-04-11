@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Drag and Drop Playground</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1><i class="fas fa-arrows-alt"></i> jQuery Drag and Drop Playground</h1>
+      <p class="subtitle">
+        Drag items from the left container and drop them on the right container
+      </p>
+
+      <div class="controls">
+        <button id="resetBtn"><i class="fas fa-redo"></i> Reset</button>
+      </div>
+
+      <div class="drag-drop-area">
+        <div class="drag-container" id="dragContainer">
+          <div class="draggable-item" data-id="1">
+            <i class="fas fa-file-alt"></i> Document 1
+          </div>
+          <div class="draggable-item" data-id="2">
+            <i class="fas fa-image"></i> Image 2
+          </div>
+          <div class="draggable-item" data-id="3">
+            <i class="fas fa-music"></i> Audio File
+          </div>
+          <div class="draggable-item" data-id="4">
+            <i class="fas fa-video"></i> Video Clip
+          </div>
+          <div class="draggable-item" data-id="5">
+            <i class="fas fa-archive"></i> Archive
+          </div>
+        </div>
+
+        <div class="drop-container" id="dropContainer">
+          <p style="color: #6c757d; margin-top: 50%">Drop items here</p>
+        </div>
+      </div>
+
+      <div class="status" id="statusMessage"></div>
+
+      <div class="footer">
+        <p>
+          Drag and drop demonstration | Made with
+          <i class="fas fa-heart" style="color: var(--danger)"></i> and jQuery
+          UI
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
