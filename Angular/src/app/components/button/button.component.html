@@ -1,0 +1,30 @@
+<div
+  class="flex flex-col items-center justify-center bg-gradient-to-br from-indigo-100 to-blue-200 p-6"
+>
+  <h1 class="text-3xl font-bold text-blue-800 mb-6">2nd Practical</h1>
+
+  <!-- Toggle Button -->
+  <button
+    class="bg-blue-600 text-white px-6 py-2 rounded-full shadow-md hover:bg-blue-700 transition duration-300 ease-in-out cursor-pointer mb-3"
+    (click)="toggleMessage()"
+  >
+    Toggle Message
+  </button>
+
+  <!-- Message -->
+  <div
+    *ngIf="showMessage"
+    class="mt-4 bg-white text-gray-700 px-6 py-4 rounded-xl shadow-lg border border-blue-300 max-w-md text-center"
+  >
+    🎉 This is your message! Have a great day!
+  </div>
+
+  <!-- Reset Button -->
+  <!-- <button
+    *ngIf="showMessage"
+    class="mt-6 bg-red-500 text-white px-6 py-2 rounded-full shadow-md hover:bg-red-600 transition duration-300 ease-in-out cursor-pointer"
+    (click)="resetMsg()"
+  >
+    Reset
+  </button> -->
+</div>

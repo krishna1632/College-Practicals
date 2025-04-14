@@ -1,0 +1,45 @@
+<div
+  class="flex flex-col items-center justify-center bg-gradient-to-r from-teal-400 to-blue-500 p-6"
+>
+  <div class="bg-white p-8 rounded-xl shadow-lg max-w-lg w-full">
+    <h2 class="text-4xl font-semibold text-gray-800 mb-6 text-center">
+      Practical 7 - To-Do List
+    </h2>
+
+    <!-- Input field for new task -->
+    <div class="flex mb-4">
+      <input
+        [(ngModel)]="newTask"
+        type="text"
+        placeholder="Add a new task"
+        class="px-4 py-2 w-full border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-teal-500"
+      />
+
+      <!-- Button to add new task -->
+      <button
+        (click)="addTask()"
+        class="px-6 py-2 bg-teal-500 hover:bg-teal-700 text-white font-semibold rounded-r-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+      >
+        Add
+      </button>
+    </div>
+
+    <!-- Display task list -->
+    <ul class="space-y-3">
+      <li
+        *ngFor="let task of tasks; let i = index"
+        class="flex items-center justify-between bg-gray-100 p-4 rounded-lg shadow-md"
+      >
+        <span class="text-lg text-gray-700">{{ task }}</span>
+
+        <!-- Delete button -->
+        <button
+          (click)="deleteTask(i)"
+          class="px-4 py-2 bg-red-500 hover:bg-red-700 text-white font-semibold rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105"
+        >
+          Delete
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
