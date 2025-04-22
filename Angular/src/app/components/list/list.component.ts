@@ -8,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.scss',
 })
 export class ListComponent {
-  names: string[] = ['Amit', 'Riya', 'Sohan', 'Priya', 'Ramesh'];
+  names: string[] = [
+    'Siya-Ram',
+    'Radha-Krishn',
+    'Lakshmi-Narayan',
+    'Gauri-Shankar',
+    'Ardhnareshwar',
+  ];
 }
